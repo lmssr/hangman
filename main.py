@@ -14,15 +14,18 @@ for i in range(7):
     images.append(image)
 # game variables
 hangman_status = 0
+# colors
+WHITE = (255, 255, 255)
+
 # setup game loop
 FPS = 60
-clock = pygame.time.Clock(FPS)
+clock = pygame.time.Clock()
 run = True
 
 while run:
     clock.tick(FPS)
 
-    win.fill((255, 255, 255))
+    win.fill(WHITE)
     pygame.display.update()
 
     for event in pygame.event.get():
@@ -31,4 +34,8 @@ while run:
         if event.type == pygame.MOUSEBUTTONDOWN:
             pos = pygame.mouse.get_pos()
             print(pos)
-pygame.quit()
+pygame.quit ()
+
+
+
+"Hello this is a test with neovim"
